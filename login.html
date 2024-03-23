@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body class="body-container">
+  <div>
+    <img src="C:\Users\taran\Desktop\hackathon\dubingo-name.jpg" height="150px" width="1000">
+    
+  </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-Form">
+            <label for="username">Username: 🐵 </label>
+            <input class="input" type="text" id="username" name="username" required>
+
+            <label for="password">Password: 🙈 </label>
+            <input class="input" type="password" id="password" name="password" required>
+
+           
+            <button class="button" type="button" onclick="goToPage2()">Login</button>
+            <br>
+            <br>
+
+            <p style="text-align: left; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic; font-size: smaller;">I, affirm to certify you that the above details are all true and correct to the best of my knowledge and belief. </p>
+                   
+            <input type="checkbox" value="cookie">
+            <label for="cookie" style="font-size: small; margin: auto; ">accept cookies</label> 
+            <br> 
+            <input type="checkbox" value="terms">
+            <label for="terms" style="font-size: small;">accept terms and conditions</label>     
+        </form>
+    </div>
+
+    <script>
+        function goToPage2() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'alpha' && password === '1234') {
+                alert('👍✅');
+                window.location.href = "menu.html";
+            } else {
+                alert('👎❌');
+            }
+        }
+    </script>
+
+    <footer>
+      <p>2023 Language Learning</p>
+    </footer>
+</body>
+</html>
